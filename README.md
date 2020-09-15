@@ -1,3 +1,16 @@
+<!-- github支持LaTeX设置 -->
+<head>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+            }
+        });
+    </script>
+</head>
+<!--  -->
 # ML_Learn
 记录机器学习的学习历程
 
@@ -20,7 +33,6 @@
 > 介绍几种距离算法：
 
 + 欧式距离
-
 两个向量点$xA$和$xB$之间的距离
 $$d = \sqrt{(xA_0-xB_0)^2+(xA_1-xB_1)^2}$$
 
