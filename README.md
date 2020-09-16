@@ -20,7 +20,9 @@
 > 介绍几种距离算法：
 
 + 欧式距离
-两个向量点$xA$和$xB$之间的距离
-$$d = \sqrt{(xA_0-xB_0)^2+(xA_1-xB_1)^2}$$
+两个向量点*xA*和*xB*之间的距离
+<!-- $$d = \sqrt{(xA_0-xB_0)^2+(xA_1-xB_1)^2}$$ -->
+
+<center><img src="https://latex.codecogs.com/gif.latex?d&space;=&space;\sqrt{(xA_0-xB_0)^2&plus;(xA_1-xB_1)^2}" title="d = \sqrt{(xA_0-xB_0)^2+(xA_1-xB_1)^2}" /></center>
 
 [1]:  https://tse2-mm.cn.bing.net/th/id/OIP.eV8F2zYO8rfJxx-R8KV9LAHaHa?w=175&h=180&c=7&o=5&dpr=2&pid=1.7    "机器学习书籍图片"
