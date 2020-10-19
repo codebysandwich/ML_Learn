@@ -13,11 +13,6 @@ import numpy as np
 import operator
 
 def createDataSet():
-    """[summary]
-    create dataset
-    Returns:
-        [tuple]: [group, labels]
-    """
     group = np.array([[1.0, 1.1], [1.0, 1.0], [0, 0], [0, 0.1]])
     labels = ['A', 'A', 'B', 'B']
     return group, labels
@@ -38,6 +33,7 @@ def classfiy0(inX, dataSet, labels, k):
     return sortedClassCount[0][0]
 
 def classfiy1(inX, dataSet, labels, k):
+    # 比较classfiy0优化计算过程
     if len(inX) == dataSet.shape[1]:
         distances = np.sqrt(np.sum((dataSet - inX) ** 2, axis=1))
         indicies = distances.argsort()
@@ -52,5 +48,4 @@ def classfiy1(inX, dataSet, labels, k):
 
 if __name__ == "__main__":
     group, labels = createDataSet()
-    # print(classfiy0([0, 0], group, labels, 3))
     print(classfiy1([0, 0], group, labels, 3))
