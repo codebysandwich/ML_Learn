@@ -1,0 +1,7 @@
+.idea/
+.DS_Store
+site-packages/
+bin/
+share/
+.ipynb_checkpoints/
+*.cfg
